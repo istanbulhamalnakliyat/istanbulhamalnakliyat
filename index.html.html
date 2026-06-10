@@ -1,0 +1,768 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>İstanbul Günlük Hamal ve Taşımacılık | 0534 433 92 42</title>
+  <meta name="description" content="İstanbul'un tüm ilçelerinde günlük hamal, evden eve nakliyat, parça eşya taşıma, tır yükleme boşaltma hizmeti. Vedat Gencel – 0534 433 92 42" />
+  <meta name="keywords" content="istanbul hamal, günlük hamal istanbul, hamal hizmeti, evden eve nakliyat istanbul, parça eşya taşıma, tır boşaltma istanbul, yükleme boşaltma, nakliyat istanbul, istanbul taşımacılık, hamaliye hizmeti" />
+  <meta name="robots" content="index, follow" />
+  <meta property="og:title" content="İstanbul Günlük Hamal ve Taşımacılık | 0534 433 92 42" />
+  <meta property="og:description" content="İstanbul'da günlük hamal, nakliyat, parça eşya ve tır boşaltma hizmeti. 7/24 ulaşın." />
+  <meta property="og:type" content="website" />
+  <meta property="og:locale" content="tr_TR" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --navy: #0D1B2A;
+      --navy-mid: #162336;
+      --orange: #E8610A;
+      --orange-light: #FF7820;
+      --cream: #F7F4EF;
+      --gray: #6B7280;
+      --light: #F0EDE8;
+      --white: #FFFFFF;
+      --radius: 10px;
+      --shadow: 0 4px 24px rgba(13,27,42,0.13);
+    }
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+    body { font-family: 'Inter', sans-serif; background: var(--navy); color: var(--white); line-height: 1.6; }
+
+    /* NAV */
+    nav {
+      position: sticky; top: 0; z-index: 100;
+      background: var(--navy);
+      border-bottom: 2px solid var(--orange);
+      display: flex; align-items: center; justify-content: space-between;
+      padding: 0 5vw; height: 64px;
+    }
+    .logo {
+      font-family: 'Barlow Condensed', sans-serif;
+      font-size: 1.35rem; font-weight: 800; letter-spacing: 0.02em;
+      color: var(--white); text-decoration: none;
+      display: flex; align-items: center; gap: 10px; line-height: 1.15;
+    }
+    .logo span { color: var(--orange); }
+    .logo-icon {
+      width: 38px; height: 38px; background: var(--orange);
+      border-radius: 7px; display: flex; align-items: center;
+      justify-content: center; font-size: 1.2rem; flex-shrink: 0;
+    }
+    .nav-cta {
+      background: var(--orange); color: var(--white);
+      padding: 9px 20px; border-radius: var(--radius);
+      text-decoration: none; font-weight: 600; font-size: 0.9rem;
+      transition: background 0.2s; white-space: nowrap;
+    }
+    .nav-cta:hover { background: var(--orange-light); }
+
+    /* HERO */
+    .hero {
+      background: linear-gradient(135deg, var(--navy) 55%, #1a2e45 100%);
+      padding: 70px 5vw 60px;
+      display: grid; grid-template-columns: 1fr 1fr; gap: 50px; align-items: center;
+      position: relative; overflow: hidden;
+    }
+    .hero::before {
+      content: ''; position: absolute; right: -60px; top: -60px;
+      width: 400px; height: 400px;
+      background: radial-gradient(circle, rgba(232,97,10,0.12) 0%, transparent 70%);
+      pointer-events: none;
+    }
+    .hero-eyebrow {
+      font-family: 'Barlow Condensed', sans-serif;
+      font-size: 0.88rem; font-weight: 700; letter-spacing: 0.18em;
+      text-transform: uppercase; color: var(--orange); margin-bottom: 18px;
+    }
+    .hero h1 {
+      font-family: 'Barlow Condensed', sans-serif;
+      font-size: clamp(2.2rem, 5vw, 3.6rem); font-weight: 800; line-height: 1.08; margin-bottom: 20px;
+    }
+    .hero h1 em { font-style: normal; color: var(--orange); }
+    .hero-sub { font-size: 1.05rem; color: #B0BEC5; max-width: 420px; margin-bottom: 28px; }
+    .hero-badges { display: flex; flex-wrap: wrap; gap: 9px; margin-bottom: 30px; }
+    .badge {
+      background: rgba(232,97,10,0.15); border: 1px solid rgba(232,97,10,0.35);
+      color: #FFB07A; padding: 5px 13px; border-radius: 20px; font-size: 0.8rem; font-weight: 600;
+    }
+    .hero-actions { display: flex; gap: 12px; flex-wrap: wrap; }
+    .btn-primary {
+      background: var(--orange); color: var(--white);
+      padding: 14px 26px; border-radius: var(--radius);
+      text-decoration: none; font-weight: 700; font-size: 0.97rem;
+      transition: background 0.2s, transform 0.15s;
+      display: inline-flex; align-items: center; gap: 8px;
+    }
+    .btn-primary:hover { background: var(--orange-light); transform: translateY(-2px); }
+    .btn-secondary {
+      background: transparent; color: var(--white);
+      padding: 14px 26px; border-radius: var(--radius);
+      text-decoration: none; font-weight: 600; font-size: 0.97rem;
+      border: 2px solid rgba(255,255,255,0.25);
+      transition: border-color 0.2s;
+      display: inline-flex; align-items: center; gap: 8px;
+    }
+    .btn-secondary:hover { border-color: var(--orange); color: var(--orange); }
+    .hero-visual { display: flex; flex-direction: column; align-items: center; gap: 18px; }
+    .truck-box {
+      background: var(--navy-mid); border: 2px solid rgba(232,97,10,0.3);
+      border-radius: 16px; padding: 28px; text-align: center; width: 100%;
+    }
+    .truck-icon { font-size: 4.5rem; display: block; margin-bottom: 12px; }
+    .truck-box h3 { font-family: 'Barlow Condensed', sans-serif; font-size: 1.3rem; font-weight: 700; color: var(--orange); margin-bottom: 6px; }
+    .truck-box p { color: #90A4AE; font-size: 0.88rem; }
+    .stats-row { display: grid; grid-template-columns: repeat(3,1fr); gap: 10px; width: 100%; }
+    .stat-card {
+      background: var(--navy-mid); border-radius: var(--radius); padding: 14px 8px; text-align: center;
+      border: 1px solid rgba(255,255,255,0.07);
+    }
+    .stat-num { font-family: 'Barlow Condensed', sans-serif; font-size: 1.8rem; font-weight: 800; color: var(--orange); display: block; }
+    .stat-label { font-size: 0.7rem; color: #90A4AE; font-weight: 500; }
+
+    /* FORM */
+    .form-section { background: var(--cream); padding: 70px 5vw; }
+    .section-title {
+      font-family: 'Barlow Condensed', sans-serif;
+      font-size: clamp(1.7rem, 3.5vw, 2.5rem); font-weight: 800;
+      color: var(--navy); text-align: center; margin-bottom: 8px;
+    }
+    .section-sub { text-align: center; color: var(--gray); font-size: 0.95rem; margin-bottom: 38px; }
+    .form-card {
+      background: var(--white); border-radius: 16px; padding: 38px;
+      max-width: 780px; margin: 0 auto; box-shadow: var(--shadow);
+    }
+    .form-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 18px; }
+    .form-group { display: flex; flex-direction: column; gap: 6px; }
+    .form-group.full { grid-column: 1 / -1; }
+    .form-group label { font-size: 0.8rem; font-weight: 600; color: var(--navy); text-transform: uppercase; letter-spacing: 0.05em; }
+    .form-group input,
+    .form-group select,
+    .form-group textarea {
+      border: 2px solid #E5E7EB; border-radius: 8px; padding: 11px 13px;
+      font-size: 0.93rem; font-family: 'Inter', sans-serif; color: var(--navy);
+      background: var(--white); transition: border-color 0.2s; outline: none;
+    }
+    .form-group input:focus, .form-group select:focus, .form-group textarea:focus { border-color: var(--orange); }
+    .form-group textarea { resize: vertical; min-height: 85px; }
+    .address-group {
+      grid-column: 1 / -1; background: var(--light);
+      border-radius: 12px; padding: 18px;
+      display: grid; grid-template-columns: 1fr 1fr; gap: 14px;
+    }
+    .address-title {
+      grid-column: 1 / -1; font-family: 'Barlow Condensed', sans-serif;
+      font-size: 1rem; font-weight: 700; color: var(--orange);
+      display: flex; align-items: center; gap: 8px;
+    }
+    .submit-btn {
+      width: 100%; background: #25D366; color: var(--white); border: none; cursor: pointer;
+      padding: 16px; border-radius: var(--radius); font-size: 1.03rem; font-weight: 700;
+      display: flex; align-items: center; justify-content: center; gap: 10px;
+      font-family: 'Inter', sans-serif; transition: background 0.2s, transform 0.15s; margin-top: 8px;
+    }
+    .submit-btn:hover { background: #1ebe5a; transform: translateY(-2px); }
+    .form-note { text-align: center; font-size: 0.77rem; color: var(--gray); margin-top: 9px; }
+
+    /* SUCCESS */
+    .success-overlay {
+      display: none; position: fixed; inset: 0;
+      background: rgba(0,0,0,0.7); z-index: 200;
+      align-items: center; justify-content: center;
+    }
+    .success-overlay.show { display: flex; }
+    .success-card {
+      background: var(--white); border-radius: 16px; padding: 44px 36px;
+      text-align: center; max-width: 400px; box-shadow: 0 20px 60px rgba(0,0,0,0.3); margin: 0 20px;
+    }
+    .success-icon { font-size: 3.2rem; display: block; margin-bottom: 14px; }
+    .success-card h3 { font-family: 'Barlow Condensed', sans-serif; font-size: 1.7rem; font-weight: 800; color: var(--navy); margin-bottom: 10px; }
+    .success-card p { color: var(--gray); font-size: 0.93rem; margin-bottom: 22px; }
+    .success-wa { background: #25D366; color: var(--white); padding: 11px 26px; border-radius: var(--radius); text-decoration: none; font-weight: 700; font-size: 0.93rem; display: inline-block; margin-bottom: 12px; }
+    .success-close { display: block; background: none; border: none; cursor: pointer; color: var(--gray); font-size: 0.83rem; font-family: 'Inter', sans-serif; margin: 0 auto; }
+
+    /* SERVICES */
+    .services-section { background: var(--navy); padding: 70px 5vw; }
+    .services-section .section-title { color: var(--white); }
+    .services-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 18px; max-width: 1100px; margin: 0 auto; }
+    .service-card {
+      background: var(--navy-mid); border: 1px solid rgba(255,255,255,0.07);
+      border-radius: 14px; padding: 28px; transition: border-color 0.2s, transform 0.2s;
+    }
+    .service-card:hover { border-color: var(--orange); transform: translateY(-4px); }
+    .service-emoji { font-size: 2rem; display: block; margin-bottom: 12px; }
+    .service-card h3 { font-family: 'Barlow Condensed', sans-serif; font-size: 1.2rem; font-weight: 700; color: var(--white); margin-bottom: 7px; }
+    .service-card p { color: #90A4AE; font-size: 0.86rem; line-height: 1.6; }
+
+    /* WHY */
+    .why-section { background: var(--navy-mid); padding: 70px 5vw; }
+    .why-section .section-title { color: var(--white); }
+    .why-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 20px; max-width: 960px; margin: 0 auto; }
+    .why-card { text-align: center; padding: 28px 16px; background: var(--navy); border-radius: 14px; border: 1px solid rgba(255,255,255,0.06); }
+    .why-num { font-family: 'Barlow Condensed', sans-serif; font-size: 2.6rem; font-weight: 800; color: var(--orange); display: block; margin-bottom: 5px; }
+    .why-card h4 { font-family: 'Barlow Condensed', sans-serif; font-size: 1.05rem; font-weight: 700; color: var(--white); margin-bottom: 7px; }
+    .why-card p { color: #78909C; font-size: 0.81rem; }
+
+    /* REVIEWS */
+    .reviews-section { background: var(--navy); padding: 70px 5vw; }
+    .reviews-section .section-title { color: var(--white); }
+    .reviews-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 18px; max-width: 1000px; margin: 0 auto; }
+    .review-card {
+      background: var(--navy-mid); border-radius: 14px; padding: 24px;
+      border: 1px solid rgba(255,255,255,0.07);
+    }
+    .review-stars { color: #FFC107; font-size: 1rem; margin-bottom: 10px; letter-spacing: 2px; }
+    .review-text { color: #B0BEC5; font-size: 0.87rem; line-height: 1.65; margin-bottom: 16px; font-style: italic; }
+    .review-author { display: flex; align-items: center; gap: 10px; }
+    .review-avatar {
+      width: 38px; height: 38px; border-radius: 50%;
+      background: var(--orange); display: flex; align-items: center; justify-content: center;
+      font-weight: 700; font-size: 0.95rem; color: var(--white); flex-shrink: 0;
+    }
+    .review-name { font-weight: 600; font-size: 0.88rem; color: var(--white); }
+    .review-date { font-size: 0.75rem; color: #546E7A; }
+    .reviews-note {
+      text-align: center; margin-top: 28px;
+      color: #546E7A; font-size: 0.82rem;
+    }
+    .reviews-note a { color: var(--orange); text-decoration: none; }
+
+    /* REGIONS */
+    .regions-section { background: var(--navy-mid); padding: 70px 5vw; }
+    .regions-section .section-title { color: var(--white); }
+    .districts-wrap { display: flex; flex-wrap: wrap; gap: 8px; justify-content: center; max-width: 960px; margin: 0 auto; }
+    .district-tag {
+      background: rgba(232,97,10,0.1); border: 1px solid rgba(232,97,10,0.25);
+      color: #FFB07A; padding: 6px 14px; border-radius: 20px; font-size: 0.79rem; font-weight: 500;
+    }
+
+    /* CONTACT STRIP */
+    .contact-strip {
+      background: var(--orange); padding: 50px 5vw;
+      display: grid; grid-template-columns: 1fr auto; gap: 24px; align-items: center;
+    }
+    .contact-strip h2 { font-family: 'Barlow Condensed', sans-serif; font-size: clamp(1.5rem, 3vw, 2.1rem); font-weight: 800; color: var(--white); }
+    .contact-strip p { color: rgba(255,255,255,0.85); font-size: 0.9rem; margin-top: 4px; }
+    .contact-actions { display: flex; gap: 12px; flex-wrap: wrap; }
+    .btn-white { background: var(--white); color: var(--orange); padding: 13px 22px; border-radius: var(--radius); text-decoration: none; font-weight: 700; font-size: 0.93rem; white-space: nowrap; }
+    .btn-dark { background: rgba(0,0,0,0.2); color: var(--white); padding: 13px 22px; border-radius: var(--radius); text-decoration: none; font-weight: 600; font-size: 0.93rem; border: 2px solid rgba(255,255,255,0.4); white-space: nowrap; }
+
+    /* SEO FOOTER */
+    .seo-footer { background: #070F18; padding: 50px 5vw 20px; }
+    .seo-footer h2 { font-family: 'Barlow Condensed', sans-serif; font-size: 1.35rem; font-weight: 700; color: #90A4AE; margin-bottom: 14px; }
+    .seo-text { color: #546E7A; font-size: 0.81rem; line-height: 1.9; max-width: 900px; margin-bottom: 26px; }
+    .seo-keywords { display: flex; flex-wrap: wrap; gap: 7px; margin-bottom: 28px; }
+    .seo-kw { background: rgba(255,255,255,0.04); border: 1px solid rgba(255,255,255,0.07); color: #546E7A; padding: 4px 11px; border-radius: 4px; font-size: 0.75rem; }
+    .footer-bottom {
+      border-top: 1px solid rgba(255,255,255,0.07); padding-top: 18px; margin-top: 18px;
+      display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 10px;
+    }
+    .footer-bottom p { color: #37474F; font-size: 0.77rem; }
+    .footer-bottom a { color: var(--orange); text-decoration: none; }
+
+    /* FLOATING WA */
+    .wa-float {
+      position: fixed; bottom: 24px; right: 24px; z-index: 90;
+      background: #25D366; width: 58px; height: 58px; border-radius: 50%;
+      display: flex; align-items: center; justify-content: center;
+      box-shadow: 0 6px 20px rgba(37,211,102,0.45);
+      text-decoration: none; font-size: 1.6rem;
+      animation: pulse-wa 2.5s infinite;
+    }
+    @keyframes pulse-wa {
+      0%, 100% { box-shadow: 0 6px 20px rgba(37,211,102,0.45); }
+      50% { box-shadow: 0 6px 32px rgba(37,211,102,0.7); }
+    }
+
+    /* ── RESPONSIVE ── */
+    @media (max-width: 900px) {
+      .hero { grid-template-columns: 1fr; padding: 50px 5vw 40px; }
+      .hero-visual { display: none; }
+      .services-grid { grid-template-columns: repeat(2,1fr); }
+      .why-grid { grid-template-columns: repeat(2,1fr); }
+      .reviews-grid { grid-template-columns: repeat(2,1fr); }
+      .contact-strip { grid-template-columns: 1fr; gap: 20px; }
+      .contact-actions { justify-content: flex-start; }
+    }
+    @media (max-width: 600px) {
+      nav { padding: 0 4vw; height: 56px; }
+      .logo { font-size: 1.05rem; gap: 7px; }
+      .logo-icon { width: 32px; height: 32px; font-size: 1rem; }
+      .nav-cta { padding: 7px 12px; font-size: 0.78rem; }
+      .hero { padding: 34px 4vw 30px; }
+      .hero-eyebrow { font-size: 0.75rem; margin-bottom: 10px; }
+      .hero h1 { font-size: 2rem; margin-bottom: 13px; }
+      .hero-sub { font-size: 0.9rem; margin-bottom: 18px; }
+      .badge { font-size: 0.73rem; padding: 4px 10px; }
+      .hero-badges { gap: 6px; margin-bottom: 20px; }
+      .hero-actions { flex-direction: column; gap: 10px; }
+      .btn-primary, .btn-secondary { width: 100%; justify-content: center; padding: 13px 18px; }
+      .form-section { padding: 44px 4vw; }
+      .form-card { padding: 20px 14px; border-radius: 12px; }
+      .form-grid { grid-template-columns: 1fr; gap: 13px; }
+      .address-group { grid-template-columns: 1fr; gap: 13px; padding: 14px; }
+      .address-title { font-size: 0.88rem; }
+      .form-group label { font-size: 0.74rem; }
+      .form-group input, .form-group select, .form-group textarea { padding: 10px 11px; font-size: 0.9rem; }
+      .submit-btn { padding: 14px; font-size: 0.95rem; }
+      .services-section { padding: 44px 4vw; }
+      .services-grid { grid-template-columns: 1fr; gap: 13px; }
+      .service-card { padding: 20px 16px; }
+      .service-emoji { font-size: 1.7rem; margin-bottom: 8px; }
+      .service-card h3 { font-size: 1.05rem; }
+      .why-section { padding: 44px 4vw; }
+      .why-grid { grid-template-columns: repeat(2,1fr); gap: 10px; }
+      .why-card { padding: 20px 10px; }
+      .why-num { font-size: 2rem; }
+      .why-card h4 { font-size: 0.9rem; }
+      .reviews-section { padding: 44px 4vw; }
+      .reviews-grid { grid-template-columns: 1fr; gap: 13px; }
+      .review-card { padding: 20px 16px; }
+      .regions-section { padding: 44px 4vw; }
+      .district-tag { font-size: 0.73rem; padding: 5px 10px; }
+      .contact-strip { padding: 34px 4vw; }
+      .contact-strip h2 { font-size: 1.45rem; }
+      .contact-actions { flex-direction: column; gap: 10px; }
+      .btn-white, .btn-dark { text-align: center; padding: 13px 18px; width: 100%; display: block; }
+      .seo-footer { padding: 34px 4vw 14px; }
+      .footer-bottom { flex-direction: column; text-align: center; gap: 7px; }
+      .section-title { font-size: 1.65rem; }
+      .section-sub { font-size: 0.86rem; }
+      .wa-float { bottom: 14px; right: 14px; width: 50px; height: 50px; }
+    }
+    @media (max-width: 360px) {
+      .logo { font-size: 0.92rem; }
+      .nav-cta { font-size: 0.7rem; padding: 6px 9px; }
+      .hero h1 { font-size: 1.75rem; }
+      .why-grid { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav>
+  <a href="#" class="logo">
+    <div class="logo-icon">💪</div>
+    <div>İSTANBUL GÜNLÜK<br/><span>HAMAL & TAŞIMACILIK</span></div>
+  </a>
+  <a href="tel:+905344339242" class="nav-cta">📞 0534 433 92 42</a>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+  <div>
+    <p class="hero-eyebrow">İstanbul'un Her İlçesinde</p>
+    <h1>Günlük Hamal &<br/><em>Taşımacılık</em> Hizmeti</h1>
+    <p class="hero-sub">Evden eve nakliyat, parça eşya taşıma, tır yükleme-boşaltma ve günlük hamal hizmeti. İstanbul'un tüm ilçelerinde güvenilir çözüm. Yetkili: Vedat Gencel</p>
+    <div class="hero-badges">
+      <span class="badge">💪 Günlük Hamal</span>
+      <span class="badge">🚛 Evden Eve Nakliyat</span>
+      <span class="badge">📦 Parça Eşya</span>
+      <span class="badge">🚢 Tır Yükleme/Boşaltma</span>
+    </div>
+    <div class="hero-actions">
+      <a href="#teklif" class="btn-primary">📋 Ücretsiz Teklif Al</a>
+      <a href="tel:+905344339242" class="btn-secondary">📞 Hemen Ara</a>
+    </div>
+  </div>
+  <div class="hero-visual">
+    <div class="truck-box">
+      <span class="truck-icon">💪</span>
+      <h3>İstanbul Günlük Hamal</h3>
+      <p>Profesyonel ekip, zamanında hizmet</p>
+    </div>
+    <div class="stats-row">
+      <div class="stat-card">
+        <span class="stat-num">7/24</span>
+        <span class="stat-label">Hizmet</span>
+      </div>
+      <div class="stat-card">
+        <span class="stat-num">39</span>
+        <span class="stat-label">İlçe</span>
+      </div>
+      <div class="stat-card">
+        <span class="stat-num">%100</span>
+        <span class="stat-label">Memnuniyet</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FORM -->
+<section class="form-section" id="teklif">
+  <h2 class="section-title">Ücretsiz Teklif Alın</h2>
+  <p class="section-sub">Bilgilerinizi doldurun, WhatsApp üzerinden hemen iletişime geçelim</p>
+  <div class="form-card">
+    <div class="form-grid">
+      <div class="form-group">
+        <label>Ad Soyad *</label>
+        <input type="text" id="adSoyad" placeholder="Adınız ve Soyadınız" />
+      </div>
+      <div class="form-group">
+        <label>Telefon *</label>
+        <input type="tel" id="telefon" placeholder="05__ ___ __ __" />
+      </div>
+
+      <div class="address-group">
+        <div class="address-title">📦 Eşyaların Bulunduğu Adres (Çıkış)</div>
+        <div class="form-group">
+          <label>İlçe</label>
+          <input type="text" id="cikisIlce" placeholder="Örn: Kadıköy" />
+        </div>
+        <div class="form-group">
+          <label>Bina Katı</label>
+          <input type="text" id="cikisKat" placeholder="Örn: 3. Kat" />
+        </div>
+        <div class="form-group">
+          <label>Asansör</label>
+          <select id="cikisAsansor">
+            <option value="">Seçiniz</option>
+            <option>Var</option>
+            <option>Yok</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label>Adres Detayı</label>
+          <input type="text" id="cikisAdres" placeholder="Mahalle / Cadde" />
+        </div>
+      </div>
+
+      <div class="address-group">
+        <div class="address-title">🏠 Taşınacağı Adres (Varış)</div>
+        <div class="form-group">
+          <label>İlçe</label>
+          <input type="text" id="varisIlce" placeholder="Örn: Beşiktaş" />
+        </div>
+        <div class="form-group">
+          <label>Bina Katı</label>
+          <input type="text" id="varisKat" placeholder="Örn: 5. Kat" />
+        </div>
+        <div class="form-group">
+          <label>Asansör</label>
+          <select id="varisAsansor">
+            <option value="">Seçiniz</option>
+            <option>Var</option>
+            <option>Yok</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label>Adres Detayı</label>
+          <input type="text" id="varisAdres" placeholder="Mahalle / Cadde" />
+        </div>
+      </div>
+
+      <div class="form-group full">
+        <label>Hizmet Türü *</label>
+        <select id="hizmetTuru">
+          <option value="">Hizmet türü seçiniz</option>
+          <option>Günlük Hamal Hizmeti</option>
+          <option>Evden Eve Nakliyat</option>
+          <option>Parça Eşya Taşıma</option>
+          <option>Tır Boşaltma</option>
+          <option>Tır Yükleme</option>
+          <option>Yükleme &amp; Boşaltma</option>
+          <option>Diğer</option>
+        </select>
+      </div>
+      <div class="form-group full">
+        <label>Açıklama (İsteğe Bağlı)</label>
+        <textarea id="aciklama" placeholder="Taşıma tarihi, eşya miktarı, özel bilgi vb."></textarea>
+      </div>
+    </div>
+    <button class="submit-btn" onclick="sendToWhatsApp()">
+      <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+      WhatsApp'a Gönder
+    </button>
+    <p class="form-note">🔒 Bilgileriniz güvenlidir. Yalnızca WhatsApp üzerinden iletilir.</p>
+  </div>
+</section>
+
+<!-- SUCCESS -->
+<div class="success-overlay" id="successOverlay">
+  <div class="success-card">
+    <span class="success-icon">✅</span>
+    <h3>Talebiniz Alındı!</h3>
+    <p>Bilgileriniz WhatsApp üzerinden Vedat Gencel'e iletildi. En kısa sürede sizi arayacağız.</p>
+    <a href="https://wa.me/905344339242" target="_blank" class="success-wa">WhatsApp'tan Takip Et</a>
+    <button class="success-close" onclick="closeSuccess()">Kapat</button>
+  </div>
+</div>
+
+<!-- SERVICES -->
+<section class="services-section">
+  <h2 class="section-title" style="color:var(--white);margin-bottom:8px">Hizmetlerimiz</h2>
+  <p class="section-sub" style="color:#78909C;margin-bottom:36px">Ne Yapabiliriz?</p>
+  <div class="services-grid">
+    <div class="service-card">
+      <span class="service-emoji">💪</span>
+      <h3>Günlük Hamal Hizmeti</h3>
+      <p>Günlük ihtiyaç duyduğunuz hamal desteği profesyonel ekibimizle karşılanır. Kısa süreli ya da günlük anlaşma ile hizmet.</p>
+    </div>
+    <div class="service-card">
+      <span class="service-emoji">🚛</span>
+      <h3>Evden Eve Nakliyat</h3>
+      <p>Tüm İstanbul'da evden eve taşımacılık. Eşyalarınız ambalajlanır, taşınır ve yeni yerine özenle yerleştirilir.</p>
+    </div>
+    <div class="service-card">
+      <span class="service-emoji">📦</span>
+      <h3>Parça Eşya Taşıma</h3>
+      <p>Tek koltuk, karyola, beyaz eşya veya birkaç koliden oluşan parça taşıma ihtiyaçlarınız için ekonomik çözüm.</p>
+    </div>
+    <div class="service-card">
+      <span class="service-emoji">🚢</span>
+      <h3>Tır Boşaltma</h3>
+      <p>Depo, fabrika veya iş yerine gelen tır ve kamyonların hızlı ve güvenli boşaltılması uzman ekibimizle yapılır.</p>
+    </div>
+    <div class="service-card">
+      <span class="service-emoji">🏭</span>
+      <h3>Tır Yükleme</h3>
+      <p>Sevkiyat öncesi tır ve kamyon yükleme operasyonları, düzenli istifleme ve güvenli yükleme hizmeti sunuyoruz.</p>
+    </div>
+    <div class="service-card">
+      <span class="service-emoji">🔄</span>
+      <h3>Yükleme &amp; Boşaltma</h3>
+      <p>Depo, mağaza, fabrika ve şantiyelerde her türlü yükleme-boşaltma operasyonu için hazırız.</p>
+    </div>
+  </div>
+</section>
+
+<!-- WHY -->
+<section class="why-section">
+  <h2 class="section-title" style="color:var(--white);margin-bottom:8px">Neden Biz?</h2>
+  <p class="section-sub" style="color:#78909C;margin-bottom:36px">Güvenilir hizmetin farkı</p>
+  <div class="why-grid">
+    <div class="why-card">
+      <span class="why-num">7/24</span>
+      <h4>Kesintisiz Hizmet</h4>
+      <p>Hafta sonu ve resmi tatil dahil her an ulaşılabilir durumdayız.</p>
+    </div>
+    <div class="why-card">
+      <span class="why-num">39</span>
+      <h4>İstanbul İlçesi</h4>
+      <p>Anadolu ve Avrupa Yakası'nın tüm ilçelerinde aktif hizmet veriyoruz.</p>
+    </div>
+    <div class="why-card">
+      <span class="why-num">Hızlı</span>
+      <h4>Aynı Gün Hizmet</h4>
+      <p>Acil hamal ve taşıma taleplerinizde aynı gün ekip gönderilebilir.</p>
+    </div>
+    <div class="why-card">
+      <span class="why-num">Uygun</span>
+      <h4>Şeffaf Fiyat</h4>
+      <p>Gizli maliyet yok. Görüşmede net fiyat, işten önce anlaşma.</p>
+    </div>
+  </div>
+</section>
+
+<!-- REVIEWS -->
+<section class="reviews-section">
+  <h2 class="section-title" style="color:var(--white);margin-bottom:8px">Müşteri Yorumları</h2>
+  <p class="section-sub" style="color:#78909C;margin-bottom:36px">Google Maps'teki gerçek değerlendirmeler</p>
+  <div class="reviews-grid">
+    <div class="review-card">
+      <div class="review-stars">★★★★★</div>
+      <p class="review-text">"Sabah aradım, öğleden sonra ekip geldi. Eşyalarımı çok özenli taşıdılar, hiçbir şey zarar görmedi. Fiyat da gayet makul. Teşekkürler!"</p>
+      <div class="review-author">
+        <div class="review-avatar">M</div>
+        <div>
+          <div class="review-name">Mehmet Y.</div>
+          <div class="review-date">Google Maps Yorumu</div>
+        </div>
+      </div>
+    </div>
+    <div class="review-card">
+      <div class="review-stars">★★★★★</div>
+      <p class="review-text">"Tır boşaltma için aradım, çok hızlı geldiler ve işi titizlikle yaptılar. Depo düzenlemesinde de yardımcı oldular. Kesinlikle tavsiye ederim."</p>
+      <div class="review-author">
+        <div class="review-avatar">A</div>
+        <div>
+          <div class="review-name">Ayşe K.</div>
+          <div class="review-date">Google Maps Yorumu</div>
+        </div>
+      </div>
+    </div>
+    <div class="review-card">
+      <div class="review-stars">★★★★★</div>
+      <p class="review-text">"Parça eşya taşıma için kullandım. Sadece birkaç parça olduğu için başka firmalar ilgilenmedi, bunlar geldi ve sorunsuz hallettiler. Çok memnunum."</p>
+      <div class="review-author">
+        <div class="review-avatar">E</div>
+        <div>
+          <div class="review-name">Emre D.</div>
+          <div class="review-date">Google Maps Yorumu</div>
+        </div>
+      </div>
+    </div>
+    <div class="review-card">
+      <div class="review-stars">★★★★★</div>
+      <p class="review-text">"Günlük hamal olarak bir hafta boyunca mağazamda çalıştılar. Çok çalışkan ve güvenilir. Bir dahaki seferde yine arayacağım."</p>
+      <div class="review-author">
+        <div class="review-avatar">F</div>
+        <div>
+          <div class="review-name">Fatma S.</div>
+          <div class="review-date">Google Maps Yorumu</div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <p class="reviews-note">
+    Daha fazla yorum için
+    <a href="https://maps.app.goo.gl/Auvy1YSkukfQLp587" target="_blank">Google Maps sayfamızı ziyaret edin →</a>
+  </p>
+</section>
+
+<!-- REGIONS -->
+<section class="regions-section">
+  <h2 class="section-title" style="color:var(--white);margin-bottom:8px">Hizmet Verdiğimiz Bölgeler</h2>
+  <p class="section-sub" style="color:#78909C;margin-bottom:32px">İstanbul'un 39 İlçesinin Tamamında</p>
+  <div class="districts-wrap">
+    <span class="district-tag">Adalar</span>
+    <span class="district-tag">Arnavutköy</span>
+    <span class="district-tag">Ataşehir</span>
+    <span class="district-tag">Avcılar</span>
+    <span class="district-tag">Bağcılar</span>
+    <span class="district-tag">Bahçelievler</span>
+    <span class="district-tag">Bakırköy</span>
+    <span class="district-tag">Başakşehir</span>
+    <span class="district-tag">Bayrampaşa</span>
+    <span class="district-tag">Beşiktaş</span>
+    <span class="district-tag">Beykoz</span>
+    <span class="district-tag">Beylikdüzü</span>
+    <span class="district-tag">Beyoğlu</span>
+    <span class="district-tag">Büyükçekmece</span>
+    <span class="district-tag">Çatalca</span>
+    <span class="district-tag">Çekmeköy</span>
+    <span class="district-tag">Esenler</span>
+    <span class="district-tag">Esenyurt</span>
+    <span class="district-tag">Eyüpsultan</span>
+    <span class="district-tag">Fatih</span>
+    <span class="district-tag">Gaziosmanpaşa</span>
+    <span class="district-tag">Güngören</span>
+    <span class="district-tag">Kadıköy</span>
+    <span class="district-tag">Kağıthane</span>
+    <span class="district-tag">Kartal</span>
+    <span class="district-tag">Küçükçekmece</span>
+    <span class="district-tag">Maltepe</span>
+    <span class="district-tag">Pendik</span>
+    <span class="district-tag">Sancaktepe</span>
+    <span class="district-tag">Sarıyer</span>
+    <span class="district-tag">Şile</span>
+    <span class="district-tag">Şişli</span>
+    <span class="district-tag">Silivri</span>
+    <span class="district-tag">Sultanbeyli</span>
+    <span class="district-tag">Sultangazi</span>
+    <span class="district-tag">Tuzla</span>
+    <span class="district-tag">Ümraniye</span>
+    <span class="district-tag">Üsküdar</span>
+    <span class="district-tag">Zeytinburnu</span>
+  </div>
+</section>
+
+<!-- CONTACT STRIP -->
+<section class="contact-strip">
+  <div>
+    <h2>Hemen Teklif Alın</h2>
+    <p>Yetkili: Vedat Gencel — 7/24 yanınızdayız</p>
+  </div>
+  <div class="contact-actions">
+    <a href="tel:+905344339242" class="btn-white">📞 0534 433 92 42</a>
+    <a href="https://wa.me/905344339242" target="_blank" class="btn-dark">💬 WhatsApp</a>
+  </div>
+</section>
+
+<!-- SEO FOOTER -->
+<footer class="seo-footer">
+  <h2>İstanbul Günlük Hamal ve Taşımacılık Hakkında</h2>
+  <p class="seo-text">
+    İstanbul Günlük Hamal ve Taşımacılık olarak İstanbul'un 39 ilçesinin tamamında günlük hamal hizmeti, evden eve nakliyat, parça eşya taşıma, tır boşaltma ve tır yükleme hizmetleri sunmaktayız.
+    Kadıköy, Ataşehir, Üsküdar, Maltepe, Kartal, Pendik, Tuzla, Ümraniye başta olmak üzere tüm Anadolu Yakası ilçelerinde; Beşiktaş, Şişli, Bakırköy, Beylikdüzü, Esenyurt, Bağcılar, Küçükçekmece başta olmak üzere tüm Avrupa Yakası ilçelerinde aktif olarak hizmet vermekteyiz.
+    Günlük hamal ihtiyacınız için aynı gün ekip gönderilebilmektedir. Tır boşaltma ve yükleme operasyonlarında deneyimli kadromuz hazır bulunmaktadır.
+    Yetkili Vedat Gencel güvencesiyle şeffaf fiyat, zamanında hizmet ve müşteri memnuniyeti önceliğimizdir.
+  </p>
+  <h2>Sık Aranan Hizmetler</h2>
+  <div class="seo-keywords">
+    <span class="seo-kw">istanbul günlük hamal</span>
+    <span class="seo-kw">hamal hizmeti istanbul</span>
+    <span class="seo-kw">günlük hamal fiyatları</span>
+    <span class="seo-kw">evden eve nakliyat istanbul</span>
+    <span class="seo-kw">parça eşya taşıma istanbul</span>
+    <span class="seo-kw">tır boşaltma istanbul</span>
+    <span class="seo-kw">tır yükleme istanbul</span>
+    <span class="seo-kw">yükleme boşaltma hizmeti</span>
+    <span class="seo-kw">kadıköy hamal</span>
+    <span class="seo-kw">beşiktaş hamal</span>
+    <span class="seo-kw">şişli hamal</span>
+    <span class="seo-kw">ataşehir hamal</span>
+    <span class="seo-kw">ümraniye hamal</span>
+    <span class="seo-kw">kartal hamal</span>
+    <span class="seo-kw">pendik hamal</span>
+    <span class="seo-kw">bakırköy hamal</span>
+    <span class="seo-kw">esenyurt hamal</span>
+    <span class="seo-kw">beylikdüzü hamal</span>
+    <span class="seo-kw">bağcılar hamal</span>
+    <span class="seo-kw">anadolu yakası hamal</span>
+    <span class="seo-kw">avrupa yakası hamal</span>
+    <span class="seo-kw">istanbul nakliyat</span>
+    <span class="seo-kw">ucuz nakliyat istanbul</span>
+    <span class="seo-kw">güvenilir hamal</span>
+    <span class="seo-kw">aynı gün hamal</span>
+    <span class="seo-kw">vedat gencel nakliyat</span>
+  </div>
+  <div class="footer-bottom">
+    <p>© 2024 İstanbul Günlük Hamal ve Taşımacılık — Yetkili: Vedat Gencel | <a href="tel:+905344339242">0534 433 92 42</a></p>
+    <p>İstanbul'un Her İlçesinde Hizmetinizdeyiz</p>
+  </div>
+</footer>
+
+<!-- FLOATING WA -->
+<a href="https://wa.me/905344339242" target="_blank" class="wa-float" title="WhatsApp ile iletişim">
+  <svg width="28" height="28" viewBox="0 0 24 24" fill="white"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+</a>
+
+<script>
+  function sendToWhatsApp() {
+    const ad = document.getElementById('adSoyad').value.trim();
+    const tel = document.getElementById('telefon').value.trim();
+    const cikisIlce = document.getElementById('cikisIlce').value.trim();
+    const cikisKat = document.getElementById('cikisKat').value.trim();
+    const cikisAsansor = document.getElementById('cikisAsansor').value;
+    const cikisAdres = document.getElementById('cikisAdres').value.trim();
+    const varisIlce = document.getElementById('varisIlce').value.trim();
+    const varisKat = document.getElementById('varisKat').value.trim();
+    const varisAsansor = document.getElementById('varisAsansor').value;
+    const varisAdres = document.getElementById('varisAdres').value.trim();
+    const hizmet = document.getElementById('hizmetTuru').value;
+    const aciklama = document.getElementById('aciklama').value.trim();
+
+    if (!ad || !tel || !hizmet) {
+      alert('Lütfen Ad Soyad, Telefon ve Hizmet Türü alanlarını doldurunuz.');
+      return;
+    }
+
+    let msg = `💪 *İSTANBUL GÜNLÜK HAMAL & TAŞIMACILIK*\n`;
+    msg += `━━━━━━━━━━━━━━━━━━\n\n`;
+    msg += `👤 *Ad Soyad:* ${ad}\n`;
+    msg += `📞 *Telefon:* ${tel}\n\n`;
+    msg += `📦 *Çıkış Adresi:*\n`;
+    msg += `   İlçe: ${cikisIlce || '-'}\n`;
+    msg += `   Kat: ${cikisKat || '-'}  |  Asansör: ${cikisAsansor || '-'}\n`;
+    if (cikisAdres) msg += `   Adres: ${cikisAdres}\n`;
+    msg += `\n🏠 *Varış Adresi:*\n`;
+    msg += `   İlçe: ${varisIlce || '-'}\n`;
+    msg += `   Kat: ${varisKat || '-'}  |  Asansör: ${varisAsansor || '-'}\n`;
+    if (varisAdres) msg += `   Adres: ${varisAdres}\n`;
+    msg += `\n🔧 *Hizmet Türü:* ${hizmet}\n`;
+    if (aciklama) msg += `📝 *Açıklama:* ${aciklama}\n`;
+
+    const encoded = encodeURIComponent(msg);
+    window.open(`https://wa.me/905344339242?text=${encoded}`, '_blank');
+    document.getElementById('successOverlay').classList.add('show');
+  }
+
+  function closeSuccess() {
+    document.getElementById('successOverlay').classList.remove('show');
+  }
+</script>
+</body>
+</html>
